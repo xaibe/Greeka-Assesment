@@ -19,6 +19,12 @@ import { TasksModule } from './task/task.module';
         database: configService.get('DATABASE_NAME'),
         autoLoadEntities: true,
         synchronize: true, // Disable in production
+        ssl: true,
+        extra: {
+          ssl: {
+            rejectUnauthorized: false
+          }
+        },
       }),
       inject: [ConfigService],
     }), TasksModule
