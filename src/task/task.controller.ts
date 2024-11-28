@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, HttpException, Param, Post, Put, Query } from '@nestjs/common';
 import { ApiQuery, ApiTags } from '@nestjs/swagger';
 import { CreateTaskDto } from './dto/create-task.dto';
-import { ListTaskDto } from './dto/List-task.dto';
+import { ListTaskDto } from './dto/list-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import { Task } from './entities/task.entity';
 import { TaskService } from './task.service';
